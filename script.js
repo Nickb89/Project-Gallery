@@ -4,10 +4,10 @@ fetch("imageInfo.json")
     console.log(data[0].url)
     let galleryContainer = document.getElementById("gallery");
     for (let i = 0; i < data.length; i++) {
-        let div = document.createElement("div");
-        div.setAttribute('class', 'galleryItem');
-        div.innerHTML = '<img src=' + data[i].url + '>';
-        galleryContainer.appendChild(div);
+        let figure = document.createElement("figure");
+        figure.innerHTML = '<img src=' + data[i].url + '>' 
+        + '<figcaption><p>' + data[i].caption + '</p></figcaption>';
+        galleryContainer.appendChild(figure);
     }
 })
 

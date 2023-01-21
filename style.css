@@ -1,16 +1,16 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(222,222,222,1) 100%);
 }
-
+/*Holds all content inside, centered on the page*/
 #contentWrapper {
     max-width:1170px;
     margin-left: auto;
     margin-right: auto;
 
   }
-
+/*Container holds gallery and header text and is set to display: flex*/
   #mainContent{
     display: flex;
     margin-left: auto;
@@ -20,20 +20,18 @@ body{
     padding: 10px;
     border-radius: 5px;
   }
-
+/*Gallery Content takes a larger proportion of the flexbox row*/
   #galleryContent{
     flex: 2 0 1;
     padding: 0;
   }
-
+/*Header or title area*/
   #header{
     display: flex;
     flex: 1 0 1;
     min-width: 0;
     padding: 10px;
     align-items: center;
-
-    
   }
 
   #header h2{
@@ -42,7 +40,6 @@ body{
     color: rgb(255, 255, 255);
     margin:0;
     font-weight: 100;
-
   }
 
   #header h3{
@@ -50,46 +47,46 @@ body{
     color: rgb(185, 185, 185);
     font-weight: 100;
     font-style: italic;
-
   }
-
+/*sets how the gallery items behave*/
   #gallery{
     display: flex;
     flex-wrap: wrap;
-    gap: .5em;
+    gap: .4em;
     border-radius: 5px;
     background-color: white;
     padding: .6em;
     margin: 0;
-   
-  }
-
-  .galleryItem{
-    flex-grow: 0;
-    flex-shrink:0;
-    flex-basis:0;
-    padding:0;
-    margin: 0;
   }
 
   figure {
-    border-top: none;
-    padding: 10px;
-    border: 1px solid white;
-    border-radius: 5px;
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+    margin:0;
   }
   figcaption {
-    padding: 0.3em;
+    position: absolute;
+    bottom: 0%;
     text-align: center;
+    line-height: .5em;
+    width: 100%;
+    opacity: 0.5;
+    font-weight: bold;
+    color: rgb(77, 77, 77);
+    background-color: rgb(236, 236, 236);
+    font-size:smaller;
   }
 
+
+/*When the page width shrinks to around a mobile device width, change the flex direction to suit portrait mode*/
   @media only screen and (max-width: 790px) {
     #mainContent {
       flex-direction: column;
     }
 
     #gallery {
-        justify-content: center;
+        justify-content: space-evenly;
     }
 
     
