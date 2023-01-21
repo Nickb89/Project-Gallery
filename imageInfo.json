@@ -10,6 +10,18 @@
     {
 		"url" : "images/card3.jpg",
 		"caption" : "Project 3"
+	},
+    {
+		"url" : "images/card1.jpg",
+		"caption" : "Project 1 - Hobby Page"
+	},
+	{
+		"url" : "images/card2.jpg",
+		"caption" : "Project 2 - Project Gallery"
+	},
+    {
+		"url" : "images/card3.jpg",
+		"caption" : "Project 3"
 	}
 	
 ]

@@ -1,5 +1,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(222,222,222,1) 100%);
 }
 
 #contentWrapper {
@@ -14,12 +16,14 @@ body{
     margin-left: auto;
     margin-right: auto;
     max-width: max-content;
-    background-color: rgb(81, 184, 253);
+    background-color: rgb(0, 0, 0);
     padding: 10px;
+    border-radius: 5px;
   }
 
   #galleryContent{
     flex: 2 0 1;
+    padding: 0;
   }
 
   #header{
@@ -27,6 +31,7 @@ body{
     flex: 1 0 1;
     min-width: 0;
     padding: 10px;
+    align-items: center;
 
     
   }
@@ -34,7 +39,7 @@ body{
   #header h2{
     text-align: center;
     padding:.5em;
-    color: rgb(35, 130, 194);
+    color: rgb(255, 255, 255);
     margin:0;
     font-weight: 100;
 
@@ -42,7 +47,7 @@ body{
 
   #header h3{
     text-align: center;
-    color: rgb(35, 130, 194);
+    color: rgb(185, 185, 185);
     font-weight: 100;
     font-style: italic;
 
@@ -51,18 +56,20 @@ body{
   #gallery{
     display: flex;
     flex-wrap: wrap;
-    gap: .2em;
+    gap: .5em;
     border-radius: 5px;
-    border:1px rgb(162, 233, 255) solid;
     background-color: white;
-    padding: 6px;
+    padding: .6em;
     margin: 0;
+   
   }
 
   .galleryItem{
     flex-grow: 0;
     flex-shrink:0;
     flex-basis:0;
+    padding:0;
+    margin: 0;
   }
 
   figure {
@@ -76,8 +83,14 @@ body{
     text-align: center;
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 790px) {
     #mainContent {
       flex-direction: column;
     }
+
+    #gallery {
+        justify-content: center;
+    }
+
+    
   }
