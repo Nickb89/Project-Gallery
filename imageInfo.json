@@ -1,27 +1,39 @@
 [
 	{
 		"url" : "images/card1.jpg",
-		"caption" : "Project 1 - Hobby Page"
+		"caption" : "1 - Hobby Page. ",
+        "githubURL" : "https://nickb89.github.io/Project-1---Hobby-Page---Gaming-With-Family/",
+        "description" : "Check out my first simple hobby page!"
 	},
 	{
 		"url" : "images/card2.jpg",
-		"caption" : "Project 2 - Project Gallery"
+		"caption" : "2 - Project Gallery",
+        "githubURL" : "#",
+        "description" : "A gallery to show off all that I have learned!"
 	},
     {
 		"url" : "images/card3.jpg",
-		"caption" : "Project 3"
+		"caption" : "3 - Coming Soon",
+        "githubURL" : "#",
+        "description" : "Coming soon!"
 	},
     {
 		"url" : "images/card1.jpg",
-		"caption" : "Project 1 - Hobby Page"
+		"caption" : "4 - Lorem Ipsum",
+        "githubURL" : "#",
+        "description" : "Coming soon!"
 	},
 	{
 		"url" : "images/card2.jpg",
-		"caption" : "Project 2 - Project Gallery"
+		"caption" : "5 - Ipsum Dolor ",
+        "githubURL" : "#",
+        "description" : "Check out my first simple hobby page!"
 	},
     {
 		"url" : "images/card3.jpg",
-		"caption" : "Project 3"
+		"caption" : "6 - Other",
+        "githubURL" : "#",
+        "description" : "Check out my first simple hobby page!"
 	}
 	
 ]
