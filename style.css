@@ -1,5 +1,5 @@
 body{
-    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(222,222,222,1) 100%);
 }
@@ -8,6 +8,9 @@ body{
     max-width:1170px;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    
 
   }
 /*Container holds gallery and header text and is set to display: flex*/
@@ -20,23 +23,37 @@ body{
     padding: 10px;
     border-radius: 5px;
   }
+/*Adds large name at top of the site, exploring background clip and transparency*/
+  .title{
+    font-size:150px;
+    font-weight:bold;
+    margin:20px 0 -13px -11px ;
+    padding:0;
+    line-height: 120px;
+    letter-spacing: -18px;
+    background: -webkit-linear-gradient(rgb(102, 102, 102), rgb(0, 0, 0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 
+  }
 
 /*Header or title area*/
   #header{
     display: flex;
-    flex: 1 0 1;
+    flex: 2;
     min-width: 0;
     padding: 10px;
     align-items: center;
   }
 
   #header h2{
-    text-align: center;
-    padding:.5em;
-    color: rgb(255, 255, 255);
-    margin:0;
-    font-weight: 100;
+  color: rgb(255, 255, 255); 
+  font-family: 'Helvetica', sans-serif; 
+  letter-spacing: -3px; 
+  text-align:center;
+  font-size:38px;
+  text-decoration: underline;
   }
 
   #header h3{
@@ -44,11 +61,12 @@ body{
     color: rgb(185, 185, 185);
     font-weight: 100;
     font-style: italic;
+    overflow-wrap: inherit;
   }
 
   /*Gallery Content takes a larger proportion of the flexbox row*/
   #galleryContent{
-    flex: 2 0 1;
+    flex: 3;
     padding: 0;
   }
 
@@ -56,25 +74,26 @@ body{
 #gallery{
     display: flex;
     flex-wrap: wrap;
-    gap: .4em;
+    gap: .2em;
     border-radius: 5px;
     background-color: white;
-    padding: .6em;
+    padding: .4em;
     margin: 0;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
 
 
-  .itemDiv {
+.itemDiv {
     position: relative;
     margin:0;
     border-radius: 5px;
   }
 
-  .itemDiv img{
+.itemDiv img{
     border-radius: 5px;
   }
 
+/*this is the button class*/
   .collapsible {
     background-color: rgb(19, 19, 19);
     color: white;
@@ -85,9 +104,11 @@ body{
     text-align: left;
     outline: none;
     font-size: 15px;
+    transition: all 0.5s ease-out;
+    border-radius: 5px 5px 0 0 ;
  
   }
-
+/*add a symbol to show whether text is expanded or not*/
   .collapsible:after {
     content: '\002B';
     color: white;
@@ -97,23 +118,23 @@ body{
   }
 
   .active, .collapsible:hover {
-    background-color: rgb(207, 207, 207);
+    background-color: rgb(146, 146, 146);
   }
 
   .active:after {
     content: "\2212";
   }
-
+/*appearance of the description text for each card.*/
   .description{
-    padding: 0 18px;
+    padding: 0 11px;
     display: none;
     overflow: hidden;
     background-color: #f1f1f1;
     font-size: smaller;
     opacity: 0.6;
-  
   }
 
+/*Set text to top of each card*/
   .textContainer{
     position: absolute;
     top:0%;
@@ -121,7 +142,6 @@ body{
     display:flex;
     flex-direction: column;
   }
-
 
 
 /*When the page width shrinks to around a mobile device width, change the flex direction to suit portrait mode*/
