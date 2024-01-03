@@ -1,12 +1,12 @@
-# Project 2 - Project-Gallery
+Project-Gallery
 
-This will become a simple project gallery to display all of the projects I complete as part of my application. 
+This is a simple project gallery to display projects I complete.
 
 This project has helped me to learn:
 
 Flexbox 
 Javascript syntax
-JSON files and using information to manipulate the DOM
+JSON files and using data from JSON to manipulate the DOM
 using a loop in code to repeat an action
 
 I also researched latest trends in website layouts and best practice
